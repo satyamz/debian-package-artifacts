@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 21 Jun 2016 22:51:04 +0530
+Source: gap-polycyclic
+Binary: gap-polycyclic
+Architecture: all amd64
+Version: 2.11-2.0~reproducible1.0~reproducible1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Bill Allombert <ballombe@debian.org>
+Changed-By: Satyam Zode <satyamzode@gmail.com>
+Description:
+ gap-polycyclic - GAP Polycyclic - Computation with polycyclic groups
+Changes:
+ gap-polycyclic (2.11-2.0~reproducible1.0~reproducible1) UNRELEASED; urgency=medium
+ .
+   * Make build reproducible
+Checksums-Sha1:
+ 920f54ab8269f918ba15bda2386e0e2693df15d4 495604 gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb
+ f2cf6060c82544d8a3c804804355358951ed96d3 7459 gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo
+Checksums-Sha256:
+ c94a3a48d62626941e5f2724a7f6addfce2dc5770514e7032b6be4bc70910992 495604 gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb
+ 894eb613ac028997727364ee69fbb92bd582797f95962bff5a95f7c872251af3 7459 gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo
+Files:
+ 3897e826fe21fddafb72586143832052 495604 math optional gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb
+ 2fa8c3ef260c6a40fb4e743f86642a4f 7459 math optional gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo
