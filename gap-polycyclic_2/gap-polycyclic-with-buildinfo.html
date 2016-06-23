@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="diffoscope" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAM8SURBVFiF7dZdaJZlGAfw3/O+e9XNjy3XllZzWImBxIpifqTgsmUHBSIeBNFBdRh0UHQ0xGdb66CFBIERZEFRQRRUw0HkQkLMYQSBdpCFWdgSP6jpNn2393k68Nn2bj3vXtb6UOh/cl/39b/u67mem/913zf/4z9GUDw5xNI8n5WIzW9m/QF2YluJmI8203mALzEvLWAerRs4Pz6vSIkZSlsYk0/GkaB0zEgyDgWMlijyWsJuS2fkQwu8pqpMTA0ypeiShG71Bp0rU8Q+A47MWEDgvHZbZl/Av4SpIgxVYB3IqwZDmoUuYkzosDaNchpAoFqkSmgjGPWzLieF1k3JHVsjvCJQHBYaSy9g1E3m+QImQiK9SbNGqJDzuiDZ0lggQJCsyelDq8BB47sbCWTsnvhG3kqcLL833eqF4hk1EOoTOjZjnnaRdq2l6KtMAyl4/g23bKJrun+Mt9uOq7nvqOVbebWYy9Adc1fM/R/3CO780dONbIeFPHsPw+ULeM5ZHTbXHfUtXpxOZzgT5z02UGsZThRzF/ilht9G+fr4zfbfccIxXIa7uVTup69i7LJXaEEqF3on1d9ludBLpVLOVoT1lky9QYtwQ6p3WAVqSyUslWwSbRrkPJrMtgn0iBVk7BPJ4sGE24EPQKW3jLgdzWKLBTbg0yTuZeGkDsp2gcUGDesHGQ/gK5G8nLMigWiCe3jCrnTRiJ9EYjm1ImsUEq5l8hScPXbpsVtlKhfan+pv0yD0ZqmU5XegGBmnDIo/pylj8oYLOP3Eab/v5Zmi6EtZ3vv1FU/2r7LioYSL2dNybbdiMdptFU57++20Vqh+iq/Tap1WpaWY611wmyWyUzxZDbIWTvEV1Ildn5agfBumoUMTtoisFvhebAAHZWxX0ChwTuScvHdVeVykToysMyJ7ittwbmj31J+6IrRDp5XTfBt1WJ+WYnZdMB0F3xlUgD5uDVj2Sa+a4SrzH+FeyHHmw17V112waBOZgP4WczkLZsILar1fpIliMU4XZoK/poE0XHl+N8v6QcGAUbVymnDIZVnzrTXqGzmnhKLxZX/niyiDjIJgwg4Se1GR/Y8idGPysh6fr0i1i/AHMWHgrwUJgNAAAAAASUVORK5CYII=" />
+  <title>/usr/local/bin/diffoscope --debugger --html gap-polycyclic-with-buildinfo.html b1/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.changes b2/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.changes</title>
+  <style>
+    body {
+      background: white;
+      color: black;
+    }
+    .footer {
+      font-size: small;
+    }
+    .difference {
+      border: outset #888 1px;
+      background-color:rgba(0,0,0,.1);
+      padding: 0.5em;
+      margin: 0.5em 0;
+    }
+    .difference table {
+      table-layout: fixed;
+      width: 100%;
+      border: 0;
+    }
+    .difference th,
+    .difference td {
+      border: 0;
+    }
+    table.diff {
+      border: 0px;
+      border-collapse:collapse;
+      font-size:0.75em;
+      font-family: Lucida Console, monospace;
+    }
+    td.line {
+      color:#8080a0
+    }
+    th {
+      background: black;
+      color: white
+    }
+    tr.diffunmodified td {
+      background: #D0D0E0
+    }
+    tr.diffhunk td {
+      background: #A0A0A0
+    }
+    tr.diffadded td {
+      background: #CCFFCC
+    }
+    tr.diffdeleted td {
+      background: #FFCCCC
+    }
+    tr.diffchanged td {
+      background: #FFFFA0
+    }
+    ins, del {
+      background: #E0C880;
+      text-decoration: none
+    }
+    span.diffponct {
+      color: #B08080
+    }
+    .comment {
+      font-style: italic;
+    }
+    .source {
+      font-weight: bold;
+    }
+    .error {
+      border: solid black 1px;
+      background: red;
+      color: white;
+      padding: 0.2em;
+    }
+    .anchor {
+      margin-left: 0.5em;
+      font-size: 80%;
+      color: #333;
+      text-decoration: none;
+      display: none;
+    }
+    .diffheader:hover .anchor {
+      display: inline;
+    }
+    .ondemand {
+      text-align: center;
+    }
+  </style>
+  
+</head>
+<body>
+
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>b1/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.changes</span> vs.</div>
+<div><span class='source'>b2/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.changes</span>
+ <a class='anchor' href='#' name=''>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>Files<span>
+ <a class='anchor' href='#Files' name='Files'>¶</a>
+</div>
+</div>
+<table class="diff">
+
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 3 lines modified</td>
+<td colspan="2">Offset 1, 3 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td colspan="2"> </td>
+<td colspan="2"> </td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<del>da</del>9<del>4c9171</del>6<del>0db</del>1<del>3c9e1</del>b<del>0​9af3d0cc997</del><span class="diffponct">·</span>​4956<del>10</del><span class="diffponct">·</span>​math<span class="diffponct">·</span>​optional<span class="diffponct">·</span>​gap-​polycyclic_2.​11-​2.​0~reproducible1.​0~reproducible1_all.​deb
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<ins>38</ins>9<ins>7e82</ins>6<ins>fe2</ins>1<ins>fddaf</ins>b<ins>725​86143832052</ins><span class="diffponct">·</span>​4956<ins>04</ins><span class="diffponct">·</span>​math<span class="diffponct">·</span>​optional<span class="diffponct">·</span>​gap-​polycyclic_2.​11-​2.​0~reproducible1.​0~reproducible1_all.​deb
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">2 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<del>3b36b9993a74d</del>4<del>c89</del>4<del>1f9​1b9b031917</del>f<span class="diffponct">·</span>​7459<span class="diffponct">·</span>​math<span class="diffponct">·</span>​optional<span class="diffponct">·</span>​gap-​polycyclic_2.​11-​2.​0~reproducible1.​0~reproducible1_amd64​.​buildinfo
+</td>
+<td class="diffline">2 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<ins>2fa8c3ef260c6a</ins>4<ins>0fb</ins>4<ins>e7​43f86642a4</ins>f<span class="diffponct">·</span>​7459<span class="diffponct">·</span>​math<span class="diffponct">·</span>​optional<span class="diffponct">·</span>​gap-​polycyclic_2.​11-​2.​0~reproducible1.​0~reproducible1_amd64​.​buildinfo
+</td>
+</tr>
+
+</table>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>file list<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/file list' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/file list'>¶</a>
+</div>
+</div>
+<table class="diff">
+
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 3 lines modified</td>
+<td colspan="2">Offset 1, 3 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​493<del>7</del><span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​493<ins>9</ins><span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4904<del>80</del><span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4904<ins>72</ins><span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+</tr>
+
+</table>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>control.tar.gz<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>control.tar<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>./md5sums<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar/./md5sums' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar/./md5sums'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>md5sums<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar/./md5sums/md5sums' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar/./md5sums/md5sums'>¶</a>
+</div>
+<div class='comment'>Files in package differ</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>data.tar.xz<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>data.tar<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>metadata<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz/metadata' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz/metadata'>¶</a>
+</div>
+</div>
+<table class="diff">
+
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 1 lines modified</td>
+<td colspan="2">Offset 1, 1 lines modified</td></tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​"manual.​six",​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Wed<span class="diffponct">·</span>​Jun<span class="diffponct">·</span>​22<span class="diffponct">·</span>​01:​2<del>1</del>:​<del>55</del><span class="diffponct">·</span>​2016,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​"manual.​six",​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Wed<span class="diffponct">·</span>​Jun<span class="diffponct">·</span>​22<span class="diffponct">·</span>​01:​2<ins>5</ins>:​<ins>40</ins><span class="diffponct">·</span>​2016,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>metadata<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz/metadata' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz/metadata'>¶</a>
+</div>
+</div>
+<table class="diff">
+
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 1 lines modified</td>
+<td colspan="2">Offset 1, 1 lines modified</td></tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​"polycyclic.​toc",​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Wed<span class="diffponct">·</span>​Jun<span class="diffponct">·</span>​22<span class="diffponct">·</span>​01:​2<del>1</del>:​<del>54</del><span class="diffponct">·</span>​2016,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​"polycyclic.​toc",​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Wed<span class="diffponct">·</span>​Jun<span class="diffponct">·</span>​22<span class="diffponct">·</span>​01:​2<ins>5</ins>:​<ins>40</ins><span class="diffponct">·</span>​2016,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>Checksums-Sha256<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/Checksums-Sha256' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/Checksums-Sha256'>¶</a>
+</div>
+</div>
+<table class="diff">
+
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 3 lines modified</td>
+<td colspan="2">Offset 1, 3 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td colspan="2"> </td>
+<td colspan="2"> </td>
+</tr>
+
+<tr class="diffunmodified">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​13f6ca4046c3d8ebf7648​e6ab97a0b6b1e701b33cb​62947e7d699bc69a6d485​6<span class="diffponct">·</span>​1091<span class="diffponct">·</span>​gap-​polycyclic_2.​11-​2.​0~reproducible1.​0~reproducible1.​dsc
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​13f6ca4046c3d8ebf7648​e6ab97a0b6b1e701b33cb​62947e7d699bc69a6d485​6<span class="diffponct">·</span>​1091<span class="diffponct">·</span>​gap-​polycyclic_2.​11-​2.​0~reproducible1.​0~reproducible1.​dsc
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">2 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<del>e6</del>4<del>079</del>8<del>1f9d41b</del>1<del>444967​62</del>7f<del>fc</del>d<del>0e7199</del>c<del>d9b2</del>5<del>d</del>4​<del>265</del>3<del>9588f7</del>e<del>55bbfd5ea7​0</del><span class="diffponct">·</span>​4956<del>10</del><span class="diffponct">·</span>​gap-​polycyclic_2.​11-​2.​0~reproducible1.​0~reproducible1_all.​deb
+</td>
+<td class="diffline">2 </td>
+<td class="diffpresent">
+<span class="diffponct">·</span>​<ins>c9</ins>4<ins>a3a4</ins>8<ins>d6262694</ins>1<ins>e5f2​724a</ins>7f<ins>6a</ins>d<ins>dfce2d</ins>c<ins>5770</ins>5​<ins>1</ins>4<ins>e70</ins>3<ins>2b6b</ins>e<ins>4bc7091099​2</ins><span class="diffponct">·</span>​4956<ins>04</ins><span class="diffponct">·</span>​gap-​polycyclic_2.​11-​2.​0~reproducible1.​0~reproducible1_all.​deb
+</td>
+</tr>
+
+</table>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>file list<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/file list' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/file list'>¶</a>
+</div>
+</div>
+<table class="diff">
+
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 3 lines modified</td>
+<td colspan="2">Offset 1, 3 lines modified</td></tr>
+
+<tr class="diffunmodified">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4<span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​debian-​binary
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​493<del>7</del><span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+<td class="diffline">2 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​493<ins>9</ins><span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​control.​tar.​gz
+</td>
+</tr>
+
+<tr class="diffchanged">
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4904<del>80</del><span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+<td class="diffline">3 </td>
+<td class="diffpresent">
+-​rw-​r-​-​r-​-​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​0<span class="diffponct">·</span>​<span class="diffponct">·</span>​<span class="diffponct">·</span>​4904<ins>72</ins><span class="diffponct">·</span>​2016-​06-​21<span class="diffponct">·</span>​17:​21:​04.​000000<span class="diffponct">·</span>​data.​tar.​xz
+</td>
+</tr>
+
+</table>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>control.tar.gz<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>control.tar<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>./md5sums<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar/./md5sums' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar/./md5sums'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>md5sums<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar/./md5sums/md5sums' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/control.tar.gz/control.tar/./md5sums/md5sums'>¶</a>
+</div>
+<div class='comment'>Files in package differ</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>data.tar.xz<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>data.tar<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>metadata<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz/metadata' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/manual.six.gz/metadata'>¶</a>
+</div>
+</div>
+<table class="diff">
+
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 1 lines modified</td>
+<td colspan="2">Offset 1, 1 lines modified</td></tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​"manual.​six",​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Wed<span class="diffponct">·</span>​Jun<span class="diffponct">·</span>​22<span class="diffponct">·</span>​01:​2<del>1</del>:​<del>55</del><span class="diffponct">·</span>​2016,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​"manual.​six",​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Wed<span class="diffponct">·</span>​Jun<span class="diffponct">·</span>​22<span class="diffponct">·</span>​01:​2<ins>5</ins>:​<ins>40</ins><span class="diffponct">·</span>​2016,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz'>¶</a>
+</div>
+</div>
+<div class='difference'>
+<div class='diffheader'>
+<div><span class='source'>metadata<span>
+ <a class='anchor' href='#gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz/metadata' name='gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_amd64.buildinfo/gap-polycyclic_2.11-2.0~reproducible1.0~reproducible1_all.deb/data.tar.xz/data.tar/./usr/share/gap/pkg/Polycyclic/doc/polycyclic.toc.gz/metadata'>¶</a>
+</div>
+</div>
+<table class="diff">
+
+<colgroup><col style="width: 3em;"/><col style="99%"/>
+
+<col style="width: 3em;"/><col style="99%"/></colgroup>
+
+<tr class="diffhunk"><td colspan="2">Offset 1, 1 lines modified</td>
+<td colspan="2">Offset 1, 1 lines modified</td></tr>
+
+<tr class="diffchanged">
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​"polycyclic.​toc",​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Wed<span class="diffponct">·</span>​Jun<span class="diffponct">·</span>​22<span class="diffponct">·</span>​01:​2<del>1</del>:​<del>54</del><span class="diffponct">·</span>​2016,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+<td class="diffline">1 </td>
+<td class="diffpresent">
+gzip<span class="diffponct">·</span>​compressed<span class="diffponct">·</span>​data,​<span class="diffponct">·</span>​was<span class="diffponct">·</span>​"polycyclic.​toc",​<span class="diffponct">·</span>​last<span class="diffponct">·</span>​modified:​<span class="diffponct">·</span>​Wed<span class="diffponct">·</span>​Jun<span class="diffponct">·</span>​22<span class="diffponct">·</span>​01:​2<ins>5</ins>:​<ins>40</ins><span class="diffponct">·</span>​2016,​<span class="diffponct">·</span>​max<span class="diffponct">·</span>​compression,​<span class="diffponct">·</span>​from<span class="diffponct">·</span>​Unix
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">Generated by diffoscope 51</div>
+</body>
+</html>
+
